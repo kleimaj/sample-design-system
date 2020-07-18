@@ -8,8 +8,8 @@ export const blue = {
 
   export const purple = {
       100: "#9DA0BD",
-      150: "#7280FF",
-      200: "#98A1F0",
+      150: "#98A1F0",
+      200: "#7280FF",
       300: "#515CBD",
       400: "#202B8A",
       500: "#23315E"

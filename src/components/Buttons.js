@@ -8,6 +8,29 @@ const Button = styled.button`
     min-width: 100px;
     cursor: pointer;
     font-family: "Work Sans", sans-serif;
+    transition: background-color 0.2s linear, color 0.2s linear;
+
+    &:hover {
+        background-color: ${defaultTheme.primaryColorHover};
+        color: ${defaultTheme.textColorOnPrimary};
+    }
+
+    &:focus {
+        background-color: ${defaultTheme.primaryColorDarker};
+        color: ${defaultTheme.textColorInverted};
+    }
+    
+    &:active {
+        background-color: ${defaultTheme.primaryColorActive};
+        color: ${defaultTheme.textColor};
+    }
+    &:disabled {
+        background-color: ${defaultTheme.primaryColorDisabled}
+        color: ${defaultTheme.textColor}
+    }
+
+
+
 `;
 
 // Inherit all properties from parent Button
