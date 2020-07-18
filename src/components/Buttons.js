@@ -1,12 +1,9 @@
 import styled from 'styled-components';
-
-const primaryColor = "#98A1F0";
-const primary400 = "#202B8A";
-// const secondaryColor = '#FFF5C7';
+import { defaultTheme, typeScale } from "../utils";
 
 const Button = styled.button`
     padding: 12px 24px;
-    font-size: 1rem;
+    font-size: ${typeScale.paragraph};
     border-radius: 20px;
     min-width: 100px;
     cursor: pointer;
@@ -16,20 +13,20 @@ const Button = styled.button`
 // Inherit all properties from parent Button
 const PrimaryButton = styled(Button)`
 // CSS
-    background-color: ${primaryColor};
+    background-color: ${defaultTheme.primaryColor};
     border: none;
     color: black;
 `;
 
 export const SecondaryButton = styled(Button)`
     background: none;
-    border: 2px solid ${primary400};
-    color: ${primary400}; 
+    border: 2px solid ${defaultTheme.primaryColorDarker};
+    color: ${defaultTheme.primaryColorDarker}; 
 `
 export const TertiaryButton = styled(Button)`
     background: none;
     border: none;
-    color: ${primary400}; 
+    color: ${defaultTheme.primaryColorDarker}; 
 `
 
 export default PrimaryButton;
