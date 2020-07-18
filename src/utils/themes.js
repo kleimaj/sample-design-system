@@ -6,9 +6,10 @@ export const defaultTheme = {
     primaryColorDarker: purple[400],
     primaryColorHover: purple[150],
     primaryColorActive: purple[200],
-    primaryColorDisabled: purple[100],
+    disabled: purple[100],
     textColorOnPrimary: neutral[600],
     textColor: neutral[600],
     textColorInverted: neutral[100],
+    textOnDisabled: neutral[300],
     primaryFont
 }

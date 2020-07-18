@@ -8,8 +8,8 @@ import { GlobalStyle } from "./utils"
 
 const App = () => (
   <div>
-    <PrimaryButton>Submit</PrimaryButton>
-    <SecondaryButton>Submit</SecondaryButton>
+    <PrimaryButton modifiers="small">Submit</PrimaryButton>
+    <SecondaryButton modifiers={["large"]}>Submit</SecondaryButton>
     <TertiaryButton>Submit</TertiaryButton>
     <GlobalStyle />
   </div>
